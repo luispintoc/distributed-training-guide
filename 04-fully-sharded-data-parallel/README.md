@@ -266,9 +266,9 @@ Same command as normal:
 
 ```bash
 cd distributed-training-guide/04-sharding-fsdp
-export TORCHELASTIC_ERROR_FILE=../error.json
+export TORCHELASTIC_ERROR_FILE=./error.json
 export OMP_NUM_THREADS=1
-export HF_HOME=../.cache
+export HF_HOME=./.cache
 torchrun --standalone \
     --nnodes 1 \
     --nproc-per-node gpu \
