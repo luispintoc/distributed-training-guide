@@ -273,7 +273,7 @@ torchrun --standalone \
     --nnodes 1 \
     --nproc-per-node gpu \
     --redirects 3 \
-    --log-dir ../logs \
+    --log-dir ./logs \
     train_llm.py \
     --experiment-name fsdp \
     --dataset-name tatsu-lab/alpaca \
